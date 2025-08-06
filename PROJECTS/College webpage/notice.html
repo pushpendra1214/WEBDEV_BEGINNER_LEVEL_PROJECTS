@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical Notice Board</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+        }
+
+        h2 {
+            text-align: center;
+            color: #003366;
+            margin: 20px 0 10px;
+        }
+
+        .notice-board {
+            width: 100%;
+            max-width: 600px;
+            height: 550px;
+            /* adjust height */
+            margin: auto;
+            background-color: #003366;
+            color: white;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 10px 0;
+            position: relative;
+        }
+
+
+        .notice-container {
+            display: flex;
+            flex-direction: column;
+            animation: scroll-up 12s linear infinite;
+        }
+
+        .notice-board a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        .notice-container:hover {
+            animation-play-state: paused;
+        }
+
+        .notice-board a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        @keyframes scroll-up {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>📰 College Notice Board</h2>
+
+    <div class="notice-board">
+        <div class="notice-container">
+            <a href="E:\STUDY\practice webdev\webdev\college\pdfs\Tech_Fest_Organizing_Team_Notice.pdf">
+                <b> :: TECHFEST CHHATTISGARH 20/08/25</b>
+            </a>
+            <a href="E:\STUDY\practice webdev\webdev\college\form.html">
+                <b> :: ADDMISSION OPEN FOR ALL COURSES 2025-26 </b>
+            </a>
+            <a href="E:\STUDY\practice webdev\webdev\college\pdfs\Tech_Fest_Organizing_Team_Notice.pdf">
+                <b> :: KHELO INDIA STARTS FROM 12/08/25</b>
+            </a>
+            <a href="E:\STUDY\practice webdev\webdev\college\pdfs\Tech_Fest_Organizing_Team_Notice.pdf">
+                <b> :: HACKATHON PARTICIPATION techfest chhattisgarh 20/09/25</b>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

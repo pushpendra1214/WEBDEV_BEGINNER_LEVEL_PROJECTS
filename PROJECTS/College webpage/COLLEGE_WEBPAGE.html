@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KIRODIMAL INSTITUTE OF TECHNOLOGY,RAIGARH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCeKPnxBuraJmmIN0SVduuMmfQ4y0YB33YvA&s");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* header {
+      background: #004080;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    } */
+
+    .header {
+      background-image: url('data:image/jpeg;base64,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');
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background-color: #ea8102; */
+      color: rgb(25, 18, 18);
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #003366;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #2f80d2;
+    }
+
+    /* .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  } */
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      background-color: #003366;
+      color: white;
+      padding: 15px 20px;
+      font-size: 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 5px;
+      
+      
+    }
+
+    .dropdown-content a {
+      color: #0c0a0a;
+      justify-content: center;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #5a8fe6;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #2f80d2;
+    }
+
+    .hero {
+      background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-e-commerce-education-banner-background-image_186720.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* height: 15vh; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(14, 3, 3);
+      /* text-shadow: 1px 1px 5px black; */
+      width: 100%;
+      height: 200px;
+      font-size: 3rem;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h {
+      margin: 0;
+      font-weight: bold;
+      color: #f7f9fb;
+      text-shadow: 2px 2px 5px rgb(10, 5, 11), 0 0 25px rgb(120, 204, 243), 0 0 5px rgb(173, 121, 125);
+    }
+
+    .imagecontent img {
+
+      border-color: #0c0a0a;
+      border: 1px;
+      transition: transform 0.3s ease;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      /* Align images horizontally */
+      gap: 10px;
+      /* Space between images */
+    }
+
+    .image-row img {
+      width: 400px;
+      /* Set fixed width */
+      height: 300px;
+      /* Set fixed height */
+      object-fit: cover;
+      /* Crop image to fit */
+      border-radius: 8px;
+      /* Optional: rounded corners */
+    }
+
+    .box-notice {
+      padding: 10px 20px;
+      padding-left: 100px;
+      max-width: 420px;
+      max-height: 420px;
+      margin: left;
+      border: 2px solid #004080;
+      border-radius: 8px;
+      background-color: burlywood;
+      text-decoration: coral;
+    }
+
+    .section-full content-inner bg-gray {
+      padding: 10px 20px;
+      max-width: 420px;
+      max-height: 420px;
+      margin: auto;
+      padding-left: 30%;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #004080;
+    }
+
+    .about,
+    .courses,
+    .admission,
+    .contact,
+    .footer {
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .courses ul {
+      list-style: disc inside;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .contact button {
+      background: #004080;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .location {
+      display: flex;
+      padding: 10px 20px;
+      justify-content: cente;
+      gap: 10px;
+    }
+
+    .location h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #004080;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        font-size: 1.5rem;
+      }
+
+      nav a {
+        padding: 10px;
+      }
+    }
+
+    /* .video {
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      margin: 20px auto;
+    } */
+
+    iframe {
+
+      background-color: #ededf0;
+      padding: 5px 10px;
+      width: 720px;
+      height: 420px;
+      right: 20px;
+
+    }
+
+    /* .youtube {
+      text-align: center;
+      padding: 20px;
+    } */
+
+   
+
+    .controls {
+
+      text-align: right;
+      padding-right: 280px;
+    }
+
+    .controls button {
+      background-color: #0a0b0c;
+      color: white;
+      font-size: medium;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 10px 15px;
+
+    }
+
+    /* div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+} */
+
+    @media (max-width: 700px) {
+      .imagecontent {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .imagecontent {
+        width: 100%;
+      }
+    }
+
+    .image-row :hover img {
+      transform: scale(1.25);
+      /* 0.9 means zoom-out */
+    }
+
+    .big {
+
+      display: flex;
+      padding: 10px 20px;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .vid {
+      text-align: center;
+      font-size: 50px;
+      color: #004080;
+      margin-top: 20px;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+
+    <img src="E:\STUDY\practice webdev\webdev\college\image.png" alt="kit logo">
+    <div>
+      <h1>KIRODIMAL INSTITUTE OF TECHNOLOGY, RAIGARH</h1>
+      <p>Empowering Education, Building Future (SINCE FROM YEAR 2000)</p>
+    </div>
+
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+     <div class="dropdown">
+      <button class="dropbtn">Courses</button>
+      <div class="dropdown-content">
+        <a href="">B.A.</a>
+        <a href="">B.E.</a>
+        <a href="">B.Tech.</a>
+        <a href="">B.A(Honours)</a>
+        <a href="">B.Sc</a>
+        <a href="">B.Com</a>
+        <a href="">B.Sc(Honours)</a>
+        <!--     <a href="#">Option 4</a> -->
+      </div>
+    </div>
+    <a href="E:\STUDY\practice webdev\webdev\PROJECTS\College webpage\entranceForm.html">Admission Form</a>
+    <a href="#contact">Contact</a>
+    <div class="dropdown">
+      <button class="dropbtn">Exam form</button>
+      <div class="dropdown-content">
+        <a href="">7th semester</a>
+        
+        <a href="">5th semester</a>
+        
+        <a href="">3rd semester</a>
+        
+        <a href="">1st semester</a>
+        <!--     <a href="#">Option 4</a> -->
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Result</button>
+      <div class="dropdown-content">
+        <a href="">6th semester</a>
+        <a href="">5th semester</a>
+        <a href="">4th semester </a>
+        <a href="">3rd semester</a>
+        <a href="">2nd semester</a>
+        <a href="">1st semester</a>
+        <!--     <a href="#">Option 4</a> -->
+      </div>
+    </div>
+    
+    <a href=" E:\STUDY\practice webdev\webdev\PROJECTS\College webpage\notice.html ">Notice</a>
+    <a href="E:\STUDY\practice webdev\webdev\college\pdfs\842359178-List-of-Teacher-in-Charge-with-Contact-Number-Email-Id-2023.pdf">  Our Faculties</a>
+    <div class="dropdown">
+      <button class="dropbtn">SIGN-IN AS</button>
+      <div class="dropdown-content">
+        <a href="E:\STUDY\practice webdev\webdev\PROJECTS\College webpage\studentsignin.html">STUDENT</a>
+        <a href="E:\STUDY\practice webdev\webdev\PROJECTS\College webpage\departmentsignin.html">DEPARTMENT MEMBER</a>
+        <a href="E:\STUDY\practice webdev\webdev\PROJECTS\College webpage\developerlogin.html">DEVELOPER </a>
+        <!--     <a href="#">Option 4</a> -->
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="movingNotice">
+    <p>
+      <marquee onmouseover="this.stop();" onmouseout="this.start();">
+        <font face="arial, helvetica, sans-serif" size="3">
+          <a href="E:\STUDY\practice webdev\webdev\college\pdfs\Tech_Fest_Organizing_Team_Notice.pdf">
+            <b> :: TECHFEST CHHATTISGARH 20/08/25</b>
+          </a>
+          <a href="E:\STUDY\practice webdev\webdev\college\form.html">
+            <b> :: ADDMISSION OPEN FOR ALL COURSES 2025-26 </b>
+          </a>
+          <a href="E:\STUDY\practice webdev\webdev\college\pdfs\Tech_Fest_Organizing_Team_Notice.pdf">
+            <b> :: KHELO INDIA STARTS FROM 12/08/25</b>
+          </a>
+          <a href="E:\STUDY\practice webdev\webdev\college\pdfs\Tech_Fest_Organizing_Team_Notice.pdf">
+            <b> :: HACKATHON PARTICIPATION techfest chhattisgarh 20/09/25</b>
+          </a>
+        </font>
+      </marquee>
+
+    </p>
+  </div>
+  <!-- <div class="big"><img src="E:\STUDY\practice webdev\webdev\college\images\image copy 3.png" width="" height="" alt="Image 2"></div> -->
+
+  <div class="hero">
+    <div>
+      <h>Welcome to K.I.T.,Raigarh Campus
+    </div>
+    </h>
+  </div>
+
+
+
+  <div class="dropdownimg">
+    <div class="image-row">
+      <!-- <img src="E:\STUDY\practice webdev\webdev\college\images\image copy 2.png" width="200" height="150" alt="Image 1"> -->
+      <div class="imagecontent"><img src="E:\STUDY\practice webdev\webdev\college\images\image copy 2.png" width="400"
+          height="300" alt="Image 1"> </div>
+      <!-- <img src="E:\STUDY\practice webdev\webdev\college\images\image copy 3.png" width="200" height="150" alt="Image 2"> -->
+      <div class="imagecontent"> <img src="E:\STUDY\practice webdev\webdev\college\images\image copy 3.png" width="400"
+          height="300" alt="Image 2"></div>
+      <!-- <img src="E:\STUDY\practice webdev\webdev\college\images\image copy.png" width="200" height="150" alt="Image 3"> -->
+      <div class="imagecontent"> <img src="E:\STUDY\practice webdev\webdev\college\images\image copy.png" width="400"
+          height="300" alt="Image 3"></div>
+
+    </div>
+  </div>
+
+  <!-- <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="E:\STUDY\practice webdev\webdev\college\images\image copy 2.png">
+      <img src="E:\STUDY\practice webdev\webdev\college\images\image copy 2.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="E:\STUDY\practice webdev\webdev\college\images\image copy 3.png">
+      <img src="E:\STUDY\practice webdev\webdev\college\images\image copy 3.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="E:\STUDY\practice webdev\webdev\college\images\image copy.png">
+      <img src="E:\STUDY\practice webdev\webdev\college\images\image copy.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+    
+  </div>
+</div> -->
+
+
+
+  </div>
+  <!-- <div class=video>
+    <div class="youtube" style="text-align:center"> -->
+      <h1 class="vid"> our college video</h1>
+      <iframe src="https://www.youtube.com/embed/K38SdRzyOjI?si=rPMRJ5vikz6uwPqT" title="YouTube video player"
+        frameborder=""
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <video id="video1" width="720">
+        <source src="E:\STUDY\practice webdev\webdev\college\KIT RAIGARH - amrit say (360p, h264).mp4" type="video/mp4">
+        <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+
+      </video>
+      <br><br>
+      <div class="controls">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeNormal()">Normal</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="toggleMute()">Mute / Unmute</button>
+      </div>
+      <br><br>
+
+<!-- 
+    </div>
+  </div> -->
+
+
+  <!-- </div>
+  </div> -->
+
+  <script>
+
+    alert("maintain best network connection for better experience");
+
+    var myVideo = document.getElementById("video1");
+
+    function playPause() {
+      if (myVideo.paused)
+        myVideo.play();
+      else
+        myVideo.pause();
+    }
+
+    function makeBig() {
+      myVideo.width = 1060;
+    }
+
+    function makeSmall() {
+      myVideo.width = 520;
+    }
+
+    function makeNormal() {
+      myVideo.width = 720;
+    }
+
+    function toggleMute() {
+      if (myVideo.muted) {
+        myVideo.muted = false;
+      } else {
+        myVideo.muted = true;
+      }
+    }
+  </script>
+
+  </div>
+
+
+
+
+
+  <div class="location">
+    <h2> OUR LOCATION</h2>
+    <br>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3703.005864372848!2d83.4106236!3d21.8573095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a27259ab23aca7b%3A0x3bb5ba327209f96d!2sKirodimal%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1752570898673!5m2!1sen!2sin"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- <div class="box-notice">
+    <div class="container">
+      <div class="section-head text-black"></div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s"
+          style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: bounceInUp;">
+          <div class="icon-bx-wrapper bx-style-1 p-a30 center fly-box bg-white">
+
+            <div class="icon-lg m-b20">
+              <span class="icon-cell text-primary">
+                <i class="flaticon-closed-notebook-and-pen"></i>
+              </span>
+            </div>
+            <div class="icon-content">
+              <h1 class="dlab-title text-uppercase">Notice</h1>
+              <p>
+                <marquee direction="up" height="360" scrollamount="4" onmouseover="this.stop();"
+                  onmouseout="this.start();">
+
+                  <a
+                    href="E:\STUDY\practice webdev\webdev\college\pdfs\Provisional selection list of 1st phase admission.pdf">
+                    <font color="#333333">::: पोस्ट मैट्रिक छात्रवृत्ति सम्बंधी आवश्यक सूचना वर्ष 2025-26 | </font>
+                  </a>
+                  <img src="E:\STUDY\practice webdev\webdev\college\images\new_icon.gif" width="32" height="20">
+                  <br><br>
+
+                  <a
+                    href="E:\STUDY\practice webdev\webdev\college\pdfs\Provisional selection list of 1st phase admission.pdf">
+                    <font color="#333333">::: शुल्क शुल्क जमा करने सम्बंधी आवश्यक सूचना 2024-25 | </font>
+                  </a>
+                  <img src="E:\STUDY\practice webdev\webdev\college\images\new_icon.gif" width="32" height="20">
+                  <br><br>
+
+                  <a
+                    href="E:\STUDY\practice webdev\webdev\college\pdfs\Provisional selection list of 1st phase admission.pdf">
+                    <font color="#333333">::: Post Matric Scholarship Date Extend Notice Year 2024-25. </font>
+                  </a>
+                  <img src="E:\STUDY\practice webdev\webdev\college\images\new_icon.gif" width="32" height="20">
+
+                </marquee>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <div class="section" id="about">
+    <div class="about">
+      <h2>About Us</h2>
+      <p>Our college offers world-class education with experienced faculty, modern infrastructure, and a vision to
+        empower students to shape a better future. We strive for academic excellence and holistic development.</p>
+    </div>
+  </div>
+
+  <div class="section" id="courses">
+    <div class="courses">
+      <h2>Courses Offered</h2>
+      <ul>
+        <li>Bachelor of Science (B.Sc)</li>
+        <li>Bachelor of Arts (B.A)</li>
+        <li>Bachelor of Commerce (B.Com)</li>
+        <li>Bachelor of Technology (B.Tech)</li>
+        <li>Master of Science (M.Sc)</li>
+        <li>Master of Arts (M.A)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" id="admission">
+    <div class="admission">
+      <h2>Admission Process</h2>
+      <p>Admissions are open for the academic year 2025-26. Interested candidates can apply online through the
+        admission
+        form. Eligibility criteria include passing marks in the qualifying exam and entrance tests (if applicable).
+      </p>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="4" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2000 KIRODIMAL INSTITUTE OF TECHNOLOGY | All Rights Reserved</p>
+    <p>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </p>
+  </footer>
+
+</body>
+
+</html>

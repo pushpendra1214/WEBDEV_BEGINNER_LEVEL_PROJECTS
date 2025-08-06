@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        section {
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #777;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+
+
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background: #0d0d0d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #e74c3c;
+        }
+.product-card:hover img {
+            transform: scale(1.25);
+            /* 0.9 means zoom-out */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Women Section</h1>
+    <p>Explore our wide range of products for Women!</p>
+    
+    <section>
+       
+         <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="front"><img src="https://rukminim2.flixcart.com/image/300/300/xif0q/kurta/m/y/e/xxl-069-hand-block-kurta-physil-original-imahed29caky6tjn.jpeg?q=90" alt="Product 1">
+                    <h3>Straight Kurta  (Pink)</h3>
+                    <p class="price">₹499.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <!-- <div class="back">
+
+                    <h2>Product Detail</h2>
+                    <p>Stylish and comfortable</p>
+
+                </div> -->
+
+            </div>
+            <div class="product-card">
+                <div class="front">
+                    <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/top/v/x/n/s-1-jne4206-tu-janasya-original-imahcz7kquzyzzzg.jpeg?q=90" alt="Product 2">
+                    <h3>Women Orange Top</h3>
+                    <p class="price">₹799.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <!-- <div class="back">
+                    
+                    <h2>Product Detail</h2>
+
+                    <p>Elegant and trendy</p>
+                </div> -->
+
+            </div>
+            <div class="product-card">
+                <div class="front">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/dress/t/g/7/xxl-1016-dreamvilla-original-imah7yy8ag3vdhve.jpeg?q=70" alt="Product 3">
+                    <h3>Women Fit and Flare white</h3>
+                    <p class="price">₹599.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <!-- <div class="back">
+                    <h2>Product Detail</h2>
+
+                    <p>Cozy and warm</p>
+                </div> -->
+
+            </div>
+            <div class="product-card">
+                <div class="front">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/dress/e/l/x/xxl-7191-sheetal-associates-original-imaguu9rxxfgepdw.jpeg?q=70" alt="Product 4">
+                    <h3>Women Fit</h3>
+                    <p class="price">₹199.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+
+                <!-- <div class="back">
+                    <h2>Product Detail</h2>
+                    <p>Casual and stylish</p>
+                </div> -->
+
+            </div>
+
+
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 TrendStore</p>
+    </footer>
+    
+</body>
+</html>
